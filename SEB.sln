@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEB.Web", "SEB.Web\SEB.Web.csproj", "{D329011C-1A0E-4735-B77E-F48DC5FE4779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEB.WebServiceIntegration", "SEB.WebServiceIntegration\SEB.WebServiceIntegration.csproj", "{9A8C682F-FF15-42E3-B05D-E160C37B1F87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEB.WeServiceIntegrationTests", "SEB.WeServiceIntegrationTests\SEB.WeServiceIntegrationTests.csproj", "{1C3F9EBC-23C1-4F08-BE26-BE96BC91FDFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{3F4B851A-5B2F-4E46-A18D-5F2118DF4034}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration", "{AF33865A-8AB5-4E6A-A951-DD63AD110186}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{2BEEFAF2-1B2C-4462-80F6-71B14AD54A1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LogicLayer", "LogicLayer", "{FFB2B346-D5EA-46BF-AFC7-DDE14273BE05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEB.Services", "SEB.Services\SEB.Services.csproj", "{E0248807-9E29-43A6-8B46-D0B010F76A35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D329011C-1A0E-4735-B77E-F48DC5FE4779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D329011C-1A0E-4735-B77E-F48DC5FE4779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D329011C-1A0E-4735-B77E-F48DC5FE4779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D329011C-1A0E-4735-B77E-F48DC5FE4779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A8C682F-FF15-42E3-B05D-E160C37B1F87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A8C682F-FF15-42E3-B05D-E160C37B1F87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A8C682F-FF15-42E3-B05D-E160C37B1F87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A8C682F-FF15-42E3-B05D-E160C37B1F87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C3F9EBC-23C1-4F08-BE26-BE96BC91FDFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3F9EBC-23C1-4F08-BE26-BE96BC91FDFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3F9EBC-23C1-4F08-BE26-BE96BC91FDFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3F9EBC-23C1-4F08-BE26-BE96BC91FDFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0248807-9E29-43A6-8B46-D0B010F76A35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0248807-9E29-43A6-8B46-D0B010F76A35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0248807-9E29-43A6-8B46-D0B010F76A35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0248807-9E29-43A6-8B46-D0B010F76A35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D329011C-1A0E-4735-B77E-F48DC5FE4779} = {3F4B851A-5B2F-4E46-A18D-5F2118DF4034}
+		{9A8C682F-FF15-42E3-B05D-E160C37B1F87} = {AF33865A-8AB5-4E6A-A951-DD63AD110186}
+		{1C3F9EBC-23C1-4F08-BE26-BE96BC91FDFD} = {2BEEFAF2-1B2C-4462-80F6-71B14AD54A1B}
+		{E0248807-9E29-43A6-8B46-D0B010F76A35} = {FFB2B346-D5EA-46BF-AFC7-DDE14273BE05}
+	EndGlobalSection
+EndGlobal

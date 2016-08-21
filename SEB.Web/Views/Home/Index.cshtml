@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "SEB";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Requirements</h2>
+        <p>
+            You have to create a small web application which will display a list of changes for currency rates for the selected date. The user should be able to select a date, then click a button and get a list of changes for currency rate of each currency.
+
+            <a href="~/Documentation/SEB_Developer_Code_Assignment.pdf">Full requirements</a>
+        </p>
+        <br>
+        <h2>Documentation</h2>
+        <h3>Short description how to run/use your application</h3>
+        <p>
+            1. Redirect to Exchange Rates module by selectinh it on navigation
+            <br>
+            <br>
+            <img src="~/Documentation/HelpImages/Header.PNG" />
+            <br>
+            <br>
+            2. Enter date for currency rates for the selected date. (*please note that it works just with the dates up to the end of the year 2014.)
+            <br>
+            <br>
+            <img src="~/Documentation/HelpImages/ExchangeRates.PNG" />
+            <br>
+            <br>
+        </p>
+        <h3>Explanation of your choices (frameworks, libraries, architecture...)</h3>
+        <p>
+            <ul>
+                <li><a href="~/Documentation/SEB_Developer_Code_Assignment.pdf">Git Repository</a></li>
+                <li>Web - <b>MVC application</b></li>
+                <li>Web framework - <b>.NET Framework 4.5.2</b></li>
+                <li>ExchangeRates page framework - <b>angularJs</b></li>
+                <li>
+                    Libraries
+                    <ul>
+                        <li>Autofac - for Services dependency injections</li>
+                        <li>BundleTransformer - for bundle transformations(url)</li>
+                        <li>Newtonsoft.Json - for Json serialisations</li>
+                        <li>ServiceStack - for integration service management</li>
+                        <li>NLog - for service exception logging</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+        <h3>Architecture</h3>
+        <p>
+            <ul>
+                <li>Used <b>TDD patter</b> for development
+                    <br>
+                    Because there was a public web service.
+                    <br>
+                <br>
+                </li>
+                <li>Project has <b>four modules</b> that are fully separated and can work alone
+                    <ul>
+                        <li><b>Integration</b> - for public web service</li>
+                        <li><b>LogicLayer</b> - for internal services and logic</li>
+                        <li><b>PresentationLayer</b> - for web applications</li>
+                        <li><b>Test</b> - for tests</li>
+                    </ul>
+                    <br>
+                </li>
+                <li>Code Map
+                    <br>
+                    <img src="~/Documentation/HelpImages/CodeMap.PNG" />
+                    <br>
+                    <br>
+                </li>
+                <li>Code metrics
+                    <br>
+                    <img src="~/Documentation/HelpImages/Code metrics.PNG" />
+                    <br>
+                </li>
+            </ul>
+        </p>
+    </div>
+</div>

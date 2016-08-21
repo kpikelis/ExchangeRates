@@ -1,0 +1,40 @@
+﻿<md-toolbar class="md-warn" ng-if="errorMessage">
+    <div class="md-toolbar-tools">
+        <h2 class="md-flex">{{errorMessage}}</h2>
+    </div>
+</md-toolbar>
+<md-content layout-padding>
+    <div layout-gt-xs="row">
+        <div flex-gt-xs>
+            <div><h4>Enter date:</h4>  (*please note that it works just with the dates up to the end of the year 2014.)</div>
+            <md-datepicker ng-model="searchDate" ng-change="searchByDate(searchDate);" md-placeholder="Enter date"></md-datepicker>
+        </div>
+    </div>
+    <div layout-gt-xs="row">
+        <table st-table="exchangeRates" class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Currency</th>
+                    <th>Quantity</th>
+                    <th>Unit</th>
+                    <th>Rate({{searchDate | date : 'yyyy-MM-dd'}})</th>
+                    <th>Rate before</th>
+                    <th>Rate difference</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="row in exchangeRates.Items">
+                    <td>{{row.Currency}}</td>
+                    <td>{{row.Quantity}}</td>
+                    <td>{{row.Unit}}</td>
+                    <td>{{row.Rate}}</td>
+                    <td>{{row.RateBefore}}</td>
+                    <td>{{row.RateDifference}}</td>
+                </tr>
+                <tr ng-if="exchangeRates.Items == null || exchangeRates.Items.length == 0">
+                    <td>There are no items to display</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</md-content>
